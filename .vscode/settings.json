@@ -1,6 +1,13 @@
 {
     "files.associations": {
         "iostream": "cpp",
-        "xstring": "cpp"
-    }
+        "xstring": "cpp",
+        "vector": "cpp",
+        "xlocale": "cpp",
+        "cstdlib": "cpp",
+        "cmath": "cpp",
+        "set": "cpp",
+        "map": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
