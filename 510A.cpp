@@ -5,10 +5,25 @@ int main() {
     int n, m;
     cin >> n >> m;
 
-    for(int i = 0; i< n; i++) {
+    int opt = m-1;
+    for(int i = 0; i < n; i++) {
         for(int j = 0; j < m; j++) {
-            (i%2 == 0) ? (cout << "#") : ((j !=  1+(i-1)*4) ? (cout << "."): (cout << "#"));
+            if(i%2 == 0) cout << "#";
+            else {
+                
+                if(j != opt) cout << ".";
+                else cout << "#";
+
+                
+
+            }
+            
+           
+        } 
+        if(i%2 != 0) {
+           (opt == m-1) ? opt = 0 : opt = m -1; 
         }
+        
         cout << "\n";
     }
 }
