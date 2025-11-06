@@ -10,14 +10,31 @@ int main() {
         cin >> cards[i];
     }
 
-    for(int i = 0; i< n/2; i++) {
-        if(cards[i] > cards[n-i -1]) {
-            s += cards[i];
-            d += cards[n - i - 1];
+    int i = 0; 
+    int j = n - 1;
+
+    bool sTurn = true;
+
+    while(i <= j) {
+        if(cards[i] > cards[j]) {
+            if(sTurn) {
+                s+=cards[i];
+            } else {
+                d += cards[i];
+            }
+            i++;
         } else {
-            d += cards[i];
-            s += cards[n - i - 1];
+            if(sTurn) {
+                s+=cards[j];
+            } else {
+                d += cards[j];
+            }
+            j--;
         }
+        sTurn = !sTurn;
+        
+        
+        
     }
 
     cout << s << " " << d;
