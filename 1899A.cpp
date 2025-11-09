@@ -2,14 +2,12 @@
 using namespace std;
 
 int main() {
-    short int t, n, turns = 0;
+    short int t;
     cin >> t;
 
     while(t--) {
+        int n;
         cin >> n;
-        bool vaTurn = true;
-        while(n%3 != 0 && turns <= 10) {
-            if()
-        }
+                
     }
 }
